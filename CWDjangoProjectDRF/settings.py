@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django_celery_beat',
 
     'users',
+    'habits',
 
 ]
 
@@ -217,3 +218,5 @@ CELERY_BEAT_SCHEDULE = {
         'schedule': timedelta(days=1),
     },
 }
+
+TELEBOT_KEY = os.getenv('TELEBOT_KEY')
